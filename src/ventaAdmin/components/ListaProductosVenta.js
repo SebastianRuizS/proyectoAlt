@@ -1,10 +1,8 @@
 import Table from 'react-bootstrap/Table';
-import Rmodal from './ActualizarProducto';
-import PaginationLista from './PaginationLista';
+import BotonEliminarProductosVenta from './BotonEliminarProductosVenta';
 
-const ListaProductos = () =>{
+const ListaProductosVenta = () => {
     return(
-        <div>
         <Table responsive="sm">
             <thead>
             <tr>
@@ -12,7 +10,8 @@ const ListaProductos = () =>{
                 <th>ID</th>
                 <th>Product</th>
                 <th>Unit price</th>
-                <th>Stock</th>
+                <th>number</th>
+                <th>Cost</th>
                 <th></th>
             </tr>
             </thead>
@@ -23,7 +22,7 @@ const ListaProductos = () =>{
                 <td>Table cell</td>
                 <td>Table cell</td>
                 <td>Table cell</td>
-                <td><Rmodal/></td>
+                <td><BotonEliminarProductosVenta/></td>
             </tr>
             <tr>
                 <td>2</td>
@@ -31,7 +30,7 @@ const ListaProductos = () =>{
                 <td>Table cell</td>
                 <td>Table cell</td>
                 <td>Table cell</td>
-                <td><Rmodal/></td>
+                <td><BotonEliminarProductosVenta/></td>
             </tr>
             <tr>
                 <td>3</td>
@@ -39,13 +38,19 @@ const ListaProductos = () =>{
                 <td>Table cell</td>
                 <td>Table cell</td>
                 <td>Table cell</td>
-                <td><Rmodal/></td>
+                <td><BotonEliminarProductosVenta/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Total Cost:</td>
+                <td>$$$$$</td>
+                <td></td>
             </tr>
             </tbody>
         </Table>
-        </div>
     );
 };
 
-
-export default ListaProductos;
+export default ListaProductosVenta;
