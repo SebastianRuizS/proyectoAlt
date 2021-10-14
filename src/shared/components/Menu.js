@@ -68,6 +68,7 @@ const Menu = () => {
                                 height="20"
                                 className="d-inline-block align-top mt-1 me-2"
                                 />Sign sales</Button></Link>
+                            <Link to="/ManageSales">
                             <Button variant="outline-dark" style={{width: "59vh"}} onClick={handleClose} size="lg">
                                 <img
                                 alt=""
@@ -75,7 +76,8 @@ const Menu = () => {
                                 width="20"
                                 height="20"
                                 className="d-inline-block align-top mt-1 me-2"
-                                />Manage sales</Button>
+                                />Manage sales</Button></Link>
+                            <Link to="/AboutUsers">
                             <Button variant="outline-dark" style={{width: "59vh"}} onClick={handleClose} size="lg">
                                 <img
                                 alt=""
@@ -83,7 +85,7 @@ const Menu = () => {
                                 width="20"
                                 height="20"
                                 className="d-inline-block align-top mt-1 me-2"
-                                />About users</Button>
+                                />About users</Button></Link>
                         </div>
                     </Col>
                     </Row>

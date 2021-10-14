@@ -7,10 +7,10 @@ const ListaProductosVenta = () => {
             <thead>
             <tr>
                 <th>#</th>
-                <th>ID</th>
+                <th>Code</th>
                 <th>Product</th>
                 <th>Unit price</th>
-                <th>number</th>
+                <th>Number</th>
                 <th>Cost</th>
                 <th></th>
             </tr>
@@ -18,6 +18,7 @@ const ListaProductosVenta = () => {
             <tbody>
             <tr>
                 <td>1</td>
+                <td>Table cell</td>
                 <td>Table cell</td>
                 <td>Table cell</td>
                 <td>Table cell</td>
@@ -30,6 +31,7 @@ const ListaProductosVenta = () => {
                 <td>Table cell</td>
                 <td>Table cell</td>
                 <td>Table cell</td>
+                <td>Table cell</td>
                 <td><BotonEliminarProductosVenta/></td>
             </tr>
             <tr>
@@ -38,9 +40,11 @@ const ListaProductosVenta = () => {
                 <td>Table cell</td>
                 <td>Table cell</td>
                 <td>Table cell</td>
+                <td>Table cell</td>
                 <td><BotonEliminarProductosVenta/></td>
             </tr>
             <tr>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>

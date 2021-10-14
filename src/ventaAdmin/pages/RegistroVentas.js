@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import BuscarProducto from '../../productoAdmin/components/BuscarProducto';
 import AddProduct from '../components/AddProduct';
 import ListaProductosVenta from '../components/ListaProductosVenta';
+import VentaStatus from '../components/VentaStatus';
 
 const RegistroVentas = () => {
     return(
@@ -17,6 +18,23 @@ const RegistroVentas = () => {
                     <h1>Sign sale</h1>
                     <p className = "mt-3 mb-4">Complete the next form and sign a new sale.</p>
                     </div>
+                    <Container className="mb-4">
+                        <Row>
+                            <Col md ={2}>
+                            <VentaStatus/>
+                            </Col>
+                            <Col>
+                            <Container>
+                            <Row>
+                                <Form.Label column lg={2} className = "me-0">Date</Form.Label>
+                                <Col>
+                                    <Form.Control type="text" placeholder="DD/MM/YYYY" />
+                                </Col>
+                            </Row>
+                            </Container>
+                            </Col>
+                        </Row>
+                    </Container>
                     <Container>
                         <Row>
                             <Form.Label column lg={2} className = "me-3">Code</Form.Label>
@@ -27,25 +45,25 @@ const RegistroVentas = () => {
                         <Row>
                             <Form.Label column lg={2} className = "me-3 mt-2">Client ID</Form.Label>
                             <Col>
-                            <Form.Control type="text" placeholder="Product's name" className = "mt-2"/>
+                            <Form.Control type="text" placeholder="Client's ID" className = "mt-2"/>
                             </Col>
                         </Row>
                         <Row>
                             <Form.Label column lg={2} className = "me-3 mt-2">Client</Form.Label>
                             <Col>
-                            <Form.Control type="text" placeholder="Product's description" className = "mt-2"/>
+                            <Form.Control type="text" placeholder="Client's name" className = "mt-2"/>
                             </Col>
                         </Row>
                         <Row>
                             <Form.Label column lg={2} className = "me-3 mt-2">Seller</Form.Label>
                             <Col>
-                            <Form.Control type="text" placeholder="Product's unit price" className = "mt-2"/>
+                            <Form.Control type="text" placeholder="Seller's name" className = "mt-2"/>
                             </Col>
                         </Row>
                         <Row>
                             <Form.Label column lg={2} className = "me-3 mt-2">Number</Form.Label>
                             <Col>
-                            <Form.Control type="text" placeholder="Product's stock" className = "mt-2"/>
+                            <Form.Control type="text" placeholder="Number of the chosen product" className = "mt-2"/>
                             </Col>
                         </Row>
                         <Row>
@@ -64,7 +82,9 @@ const RegistroVentas = () => {
             <Row className="justify-content-md-center align-items-center">
                 <Col md={10}>
                 <ListaProductosVenta/>
-                <Button variant="dark">Bill</Button>
+                <div className="d-grid gap-2 mb-4">
+                    <Button variant="dark">Bill</Button>
+                </div>
                 </Col>
             </Row>
         </Container>

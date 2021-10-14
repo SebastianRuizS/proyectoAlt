@@ -1,6 +1,5 @@
 import Table from 'react-bootstrap/Table';
 import Rmodal from './ActualizarProducto';
-import PaginationLista from './PaginationLista';
 
 const ListaProductos = () =>{
     return(

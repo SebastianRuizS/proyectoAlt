@@ -1,22 +1,23 @@
+import ListaUsuarios from '../components/ListaUsuarios';
+import BuscarUsuario from '../components/BuscarUsuario';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import BuscarVenta from '../components/BuscarVenta';
-import ListaVentas from '../components/ListaVentas';
 
-const Ventas = () => {
+
+const GestionUsuario = () => {
     return(
         <Container>
                 <Row style = {{height: '77vh'}} className="justify-content-md-center align-items-center">
                     <Col md = {10}>
                         <div className = "text-center">
-                        <h1>Manage Sales</h1>
+                        <h1>Users</h1>
                         <Container>
                             <Row className="justify-content-md-center">
-                                <BuscarVenta/>
+                                <BuscarUsuario/>
                             </Row>
                             <Row>
-                                <ListaVentas/>
+                                <ListaUsuarios/>
                             </Row>
                         </Container>
                         </div>
@@ -26,4 +27,4 @@ const Ventas = () => {
     );
 };
 
-export default Ventas;
+export default GestionUsuario;
