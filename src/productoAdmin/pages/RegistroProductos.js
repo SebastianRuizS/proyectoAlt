@@ -15,12 +15,6 @@ const RegistroProductos = () => {
                     </div>
                     <Container>
                         <Row>
-                            <Form.Label column lg={2} className = "me-3">Code</Form.Label>
-                            <Col>
-                            <Form.Control type="text" placeholder="00A" />
-                            </Col>
-                        </Row>
-                        <Row>
                             <Form.Label column lg={2} className = "me-3 mt-2">Name</Form.Label>
                             <Col>
                             <Form.Control type="text" placeholder="Product's name" className = "mt-2"/>

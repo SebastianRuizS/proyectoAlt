@@ -7,8 +7,8 @@ const BuscarProducto = () =>{
     return(
         <InputGroup style={{width: '90vh'}} className="mb-4 mt-4">
             <Form.Control
-            placeholder="Search products"
-            aria-label="Search products"
+            placeholder="Search products by name"
+            aria-label="Search products by name"
             aria-describedby="basic-addon2"
             />
             <Button variant="outline-secondary" id="button-addon2">
